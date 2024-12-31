@@ -14,7 +14,7 @@ class DeGiro(object):
 
     __CLIENT_INFO_URL = 'https://trader.degiro.nl/pa/secure/client'
 
-    __GET_STOCKS_URL = 'https://trader.degiro.nl/products_s/secure/v5/stocks'
+    __GET_STOCKS_URL = 'https://trader.degiro.nl/productsearch/secure/v1/stocks'
     __PRODUCT_SEARCH_URL = 'https://trader.degiro.nl/product_search/secure/v5/products/lookup'
     __PRODUCT_INFO_URL = 'https://trader.degiro.nl/product_search/secure/v5/products/info'
     __ID_DICTIONARY_URL = 'https://trader.degiro.nl/product_search/config/dictionary'
