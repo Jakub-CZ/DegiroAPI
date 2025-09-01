@@ -6,7 +6,7 @@ class Product:
         self.props = product  # for later access to any property which is not included below
         self.__id = product['id']
         self.__name = product['name']
-        self.__isin = product['isin']
+        self.__isin = product.get('isin')
         self.__symbol = product['symbol']
         self.__currency = product['currency']
         self.__product_type = product['productTypeId']
@@ -69,3 +69,7 @@ class Product:
     @property
     def is_option(self):  # stock option?
         return self.product_type == 8
+
+    @property
+    def is_fx(self):  # manual forex trade
+        return self.product_type == 3
